@@ -91,3 +91,36 @@
 		</footer>
 	</body>
 </html>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165254470-1');
+</script>
+<script>
+var host=location.hostname.split('.');
+var purl=location.hostname;
+if(host.length==3){
+    purl=`${host[1]}.${host[2]}`;
+}
+Array.from(document.getElementsByTagName('input')).forEach(e=>{
+  e.addEventListener('click',()=>{
+    document.cookie='oldsmobile=owo; max-age=259200; sameSite=lax; domain='+purl+'; path=/; secure;';
+  });
+});
+</script>
+				      <script>
+        function $(id) {
+          return document.getElementById(id);
+        }
+        $('web-search-box').onsubmit = function() {
+          var url = $('url').value;
+          //this is the URL for the server
+          window.location.href = `//c.${window.location.hostname.replace(/^www./, "")}/${url}`;
+          return false;
+        };
+        window.onload = function() {
+          $('url').focus();
+        }
+      </script>
